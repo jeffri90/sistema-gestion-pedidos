@@ -1,0 +1,52 @@
+{
+  "fecha": "2026-10-18",
+  "collection": "Sistema de Gestión de Pedidos · APF2",
+  "stats": {
+    "iterations": {
+      "total": 1,
+      "pending": 0,
+      "failed": 0
+    },
+    "items": {
+      "total": 52,
+      "pending": 0,
+      "failed": 0
+    },
+    "scripts": {
+      "total": 53,
+      "pending": 0,
+      "failed": 0
+    },
+    "prerequests": {
+      "total": 52,
+      "pending": 0,
+      "failed": 0
+    },
+    "requests": {
+      "total": 52,
+      "pending": 0,
+      "failed": 0
+    },
+    "tests": {
+      "total": 52,
+      "pending": 0,
+      "failed": 0
+    },
+    "assertions": {
+      "total": 126,
+      "pending": 0,
+      "failed": 0
+    },
+    "testScripts": {
+      "total": 52,
+      "pending": 0,
+      "failed": 0
+    },
+    "prerequestScripts": {
+      "total": 1,
+      "pending": 0,
+      "failed": 0
+    }
+  },
+  "failureCount": 0
+}

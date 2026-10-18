@@ -1,0 +1,62 @@
+OK POST /api/auth/login
+OK GET /login
+OK Página sin error ni texto mal codificado
+OK POST /login
+OK Página sin error ni texto mal codificado
+OK Login de sesión y resumen JSP
+OK GET /productos
+OK Página sin error ni texto mal codificado
+OK GET /productos/nuevo
+OK Página sin error ni texto mal codificado
+OK GET /clientes
+OK Página sin error ni texto mal codificado
+OK GET /clientes/nuevo
+OK Página sin error ni texto mal codificado
+OK GET /pedidos
+OK Página sin error ni texto mal codificado
+OK GET /pedidos/nuevo
+OK Página sin error ni texto mal codificado
+OK GET /clientes/nuevo
+OK Página sin error ni texto mal codificado
+OK POST /clientes/guardar
+OK Página sin error ni texto mal codificado
+OK Alta por JSP y DAO JDBC
+OK GET /api/clientes
+OK GET /clientes/33/editar
+OK Página sin error ni texto mal codificado
+OK POST /clientes/guardar
+OK Página sin error ni texto mal codificado
+OK GET /api/clientes/33
+OK Edición JDBC visible mediante JPA
+OK GET /jsf/cliente.xhtml
+OK Página sin error ni texto mal codificado
+OK JSF genera estado de vista real
+OK POST /jsf/cliente.xhtml
+OK Página sin error ni texto mal codificado
+OK Managed Bean JSF persiste el cliente
+OK GET /api/clientes
+OK POST /api/productos
+OK GET /productos/33/editar
+OK Página sin error ni texto mal codificado
+OK GET /pedidos/nuevo
+OK Página sin error ni texto mal codificado
+OK POST /pedidos/guardar
+OK Página sin error ni texto mal codificado
+OK Alta de pedido desde JSP
+OK GET /pedidos/33/editar
+OK Página sin error ni texto mal codificado
+OK POST /pedidos/33/confirmar
+OK Página sin error ni texto mal codificado
+OK Confirmación desde JSP
+OK GET /api/productos/33
+OK Confirmación web descuenta stock
+OK POST /pedidos/33/cancelar
+OK Página sin error ni texto mal codificado
+OK Cancelación desde JSP
+OK GET /api/productos/33
+OK Cancelación web devuelve stock
+OK DELETE /api/pedidos/33
+OK DELETE /api/clientes/33
+OK DELETE /api/clientes/34
+OK DELETE /api/productos/33
+TOTAL: 61 comprobaciones HTTP web correctas
