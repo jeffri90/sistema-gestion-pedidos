@@ -273,4 +273,37 @@ Hibernate crea/actualiza las tablas (`ddl-auto=update`) para este avance. `datab
 6. En Postman, demostrar un 403 con CONSULTA y el rollback ante stock insuficiente.
 7. Mostrar los tests y ubicar las capas, el DAO JDBC, la consulta JPQL y `@Transactional`.
 
+## 13. Frontend Angular (tercer avance)
+
+La carpeta `frontend/` contiene una aplicación Angular 21 que consume la API REST real con JWT.
+Requiere Node.js 20.19+, 22.12+ o 24+.
+
+```powershell
+# Terminal 1: backend
+.\mvnw.cmd spring-boot:run
+```
+
+```powershell
+# Terminal 2: frontend
+cd frontend
+npm install
+npm start
+```
+
+Abrir **http://localhost:4200** y entrar con los usuarios de la sección 2. El proxy de desarrollo
+(`frontend/proxy.conf.json`) envía `/api/**` a `http://localhost:8080`.
+
+| Requisito del avance | Dónde mostrarlo |
+| --- | --- |
+| Proyecto organizado | `frontend/src/app/core`, `shared`, `features` |
+| Rutas principales | `frontend/src/app/app.routes.ts` (guardas por sesión y rol, páginas 403 y 404) |
+| Formularios con validación | Productos, clientes y pedidos (líneas dinámicas con `FormArray`) |
+| Consumo real de API REST | `core/services/*.service.ts` con `HttpClient` |
+| CRUD visible | Productos, clientes y pedidos (crear, editar, confirmar, cancelar y eliminar) |
+| Manejo de errores HTTP | `core/http/`, `shared/error-api`, página «Errores HTTP» (`/diagnostico`) |
+| Autenticación | `core/auth/` (login, `authInterceptor` con `Bearer`, guardas) |
+| Evidencia end-to-end | `docs/evidencias/VERIFICACION-ANGULAR.md` y `docs/evidencias/angular/` |
+
+Más detalles en `frontend/README.md`.
+
 Referencias de implementación: [Spring Boot y JSP](https://docs.spring.io/spring-boot/3.5/reference/web/servlet.html#web.servlet.embedded-container.jsp-limitations), [JoinFaces 6.1.1](https://docs.joinfaces.org/current/reference/), [Spring Security JWT](https://docs.spring.io/spring-security/reference/servlet/oauth2/resource-server/jwt.html).
